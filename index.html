@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>coffees.app</title>
+    <script>
+        const fragment = decodeURIComponent(window.location.hash.slice(1));
+        console.log(fragment);
+        if ([
+            "笔记史",
+            "笔记方法论",
+            "笔记软件现状",
+            "笔记软件市场洞察"
+        ].includes(fragment)) {
+            window.location.href = "https://coffee.kaffa.im#" + fragment;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        coffees.app
+    </header>
+</body>
+</html>
